@@ -10,8 +10,8 @@ In this series, I am creating a typing game with React and Redux. Including sett
 You can find the project [here](https://github.com/nadeemkhedr/typemania)
 
 This post is part of the ***"Making a game with React and Redux"*** series
-1. [Getting Started](http://nadeemkhedr.com/making-a-game-with-react-and-redux-getting-started/)
-2. [Plan, Define, Build Process](http://nadeemkhedr.com/making-a-game-with-react-and-redux-02-plan-define-build-process/)
+1. [Getting Started](/making-a-game-with-react-and-redux-getting-started/)
+2. [Plan, Define, Build Process](/making-a-game-with-react-and-redux-02-plan-define-build-process/)
 3. **Core Mechanics** <-
 
 ---

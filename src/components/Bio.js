@@ -18,19 +18,32 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt="Nadeem Khedr"
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: '50%'
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
+          Written by <strong>Nadeem Khedr</strong> citizen of the world, you can
+          find me on{' '}
+          <a
+            href="https://twitter.com/nadeemkhedr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>{' '}
+          &{' '}
+          <a
+            href="https://github.com/nadeemkhedr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
           </a>
         </p>
       </div>

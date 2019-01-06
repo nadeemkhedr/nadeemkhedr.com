@@ -4,7 +4,7 @@ date: "2013-01-29T15:22:53.000Z"
 tags: ["bindings","knockout","mvvm"]
 ---
 
-# Bind a `viewModel` to the whole page
+## Bind a *viewModel* to the whole page
 
 There are many variations to write the view model in knockout, for example if we are using a simple object as a view model we will have some problems with *<span style="color:#800000;">this, </span>*we will examine the variations of how we would write our view model and why
 
@@ -31,7 +31,7 @@ ko.applyBindings(new User());
 
 This will bind our javascript view model to the whole *html* document and every variable in the *databind* attributes wil refer to a property of this one view model
 
-# Bind a `viewModel` to a partial part of the page
+## Bind a *viewModel* to a partial part of the page
 
 In the previous example we passed our `viewModel` to `ko.applyBindings`, this method take another parameter, which is the `DOM` element that we want to attach our `viewModel` to, In the next example we will attach two different & not related `viewModel`s to different parts of our page
 
@@ -61,7 +61,7 @@ ko.applyBindings(new User("Phil","Joe"), $("#section2").get(0));
 ```
 
 
-# Bind a `viewModel` to the whole page and bind other `viewModel`s to sections inside the page
+## Bind a *viewModel* to the whole page and bind other *viewModel*s to sections inside the page
 
 In a more advanced scenario what we could want is to bind a viewModel to the whole page & sort of mini `viewModel`s to different reusable components inside the page
 

@@ -8,8 +8,8 @@ You can find the project [here](https://github.com/nadeemkhedr/typemania)
 
 This post is part of the ***"Making a game with React and Redux"*** series
 1. **Getting Started** <-
-2. [Plan, Define, Build Process](http://nadeemkhedr.com/making-a-game-with-react-and-redux-02-plan-define-build-process/)
-3. [Core Mechanics](http://nadeemkhedr.com/making-a-game-with-react-and-redux-03-core-mechanics/)
+2. [Plan, Define, Build Process](/making-a-game-with-react-and-redux-02-plan-define-build-process/)
+3. [Core Mechanics](/making-a-game-with-react-and-redux-03-core-mechanics/)
 
 ---
 

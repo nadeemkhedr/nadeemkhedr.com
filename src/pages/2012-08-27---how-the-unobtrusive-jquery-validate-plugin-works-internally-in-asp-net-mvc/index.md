@@ -23,7 +23,7 @@ What we will be talking about in this article
 - Adapters
 
 
-# The `parse` method
+## *parse()* method
 
 we will explain the cycle of whats happening in the unobtrusive validation at the document load and will understand what is the role of every component
 
@@ -73,7 +73,7 @@ so whats the parse method exactly
 There is two sections in the parse method
 
 
-## 1- `parseElement` section
+### 1- *parseElement()* section
 
 `parseElement(element, skipAttach)`
 
@@ -87,7 +87,7 @@ so the first thing that happens we iterate over all the elements that have a dat
 
 then call `parseElement()` and pass it the element we want to validate and `true` for `skipAttach`
 
-### `skipAttach` parameter explanation
+#### *skipAttach()* parameter explanation
 
 a question could come up why we passed `true` to `skipAttach` and not `false`
 
@@ -101,7 +101,7 @@ So what other scenarios we would pass `true` to `skipAttach` ?
 
 If we want to add dynamic element to an already validated form we will pass true to skip validating the form again because it won't do anything *(we will talk about dynamic validating element in the next article)*
 
-### `parseElement` function explanation
+#### *parseElement()* function
 
 The `parseElement()` does mainly two things
 
@@ -116,7 +116,7 @@ The `parseElement()` does mainly two things
  > every call to `parseElement` its result will be saved on the form itself using `$.data(“unobtrusiveValidation“)` that’s how the separate calls sync in the same data source
 
 
-## 2- `validateInfo` section
+### 2- *validateInfo()* section
 
 ```javascript
 var $forms = $(selector)
@@ -133,7 +133,7 @@ $forms.each(function () {
 });
 ```
 
-### `validateInfo` function explanation
+#### *validateInfo()* function explanation
 
 we already said calling `validateInfo()` will construct an object of options for the `validate()` method, the options are used by the `jquery.unobtrusive` like a custom `errorPlacement` function, custom `errorClass` and an empty rules array
 
@@ -179,7 +179,7 @@ function validationInfo(form) {
 
 first we are checking if we already called this function on the form before by using `$form.data(“unobtrusiveValidation“)` if we did then do nothing and return the result
 
-### The return object explanation
+#### The return object explanation
 
 If its the first time we call `validationInfo()` then we construct a result object and will save it on the form using `$.data()` method this object will contain 3 parts:
 
@@ -211,7 +211,7 @@ $(‘form’).trigger(‘reset.unobtrusiveValidation’)
 - a custom `validate()` method that will be called from unobtrusive ajax
 
 
-# Adapters
+## Adapters
 
 I intentionally left the `adapters` section out when i talked about the `parseElement()` method because its complicated enough to be in a sub-section
 

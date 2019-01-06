@@ -1,15 +1,16 @@
 language: node_js
 
-os:
-  - linux
-  - osx
-
-node_js:
-  - "node"
-  - "lts/*"
-  - "7"
-  - "8"
-
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  keep-history: true
+  on:
+    branch: master
+before_script:
+  - "npm install"
 script:
-  - npm install
-  - npm run lint
+  - "npm run lint"
+after_success:
+  - "npm run deploy"
