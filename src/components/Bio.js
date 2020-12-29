@@ -1,54 +1,66 @@
+/**
+ * Bio component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
+
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Image from 'gatsby-image'
 
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+const Bio = () => {
+  const data = useStaticQuery(graphql`
+    query BioQuery {
+      avatar: file(absolutePath: { regex: "/blog-icon.png/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50, quality: 95) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          author {
+            name
+            summary
+          }
+          social {
+            twitter
+          }
+        }
+      }
+    }
+  `)
 
-import profilePic from './profile-pic.jpg'
-import { rhythm } from '../utils/typography'
+  // Set these values by editing "siteMetadata" in gatsby-config.js
+  const author = data.site.siteMetadata?.author
+  const social = data.site.siteMetadata?.social
 
-class Bio extends React.Component {
-  render() {
-    return (
-      <div
-        style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
-        }}
-      >
-        <img
-          src={profilePic}
-          alt="Nadeem Khedr"
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-            borderRadius: '50%'
+  const avatar = data?.avatar?.childImageSharp?.fixed
+
+  return (
+    <div className="bio">
+      {avatar && (
+        <Image
+          fixed={avatar}
+          alt={author?.name || ``}
+          className="bio-avatar"
+          imgStyle={{
+            borderRadius: `50%`,
           }}
         />
+      )}
+      {author?.name && (
         <p>
-          Written by <strong>Nadeem Khedr</strong> citizen of the world, you can
-          find me on{' '}
-          <a
-            href="https://twitter.com/nadeemkhedr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>{' '}
-          &{' '}
-          <a
-            href="https://github.com/nadeemkhedr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
+          Written by <strong>{author.name}</strong> {author.summary}, you can
+          find me on {` `}
+          <a href={`https://twitter.com/${social.twitter}`}>Twitter</a> &{' '}
+          <a href={`https://github.com/${social.github}`}>Github</a>
         </p>
-      </div>
-    )
-  }
+      )}
+    </div>
+  )
 }
 
 export default Bio
