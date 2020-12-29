@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nadeem Khedr]]></title><description><![CDATA[The result of playing with web technologies & tools]]></description><link>https://nadeemkhedr.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Dec 2020 12:44:46 GMT</lastBuildDate><item><title><![CDATA[Making a game with React and Redux: 03 Core Mechanics]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nadeem Khedr]]></title><description><![CDATA[The result of playing with web technologies & tools]]></description><link>https://nadeemkhedr.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Dec 2020 13:02:59 GMT</lastBuildDate><item><title><![CDATA[Making a game with React and Redux: 03 Core Mechanics]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
 You can find the project…]]></description><link>https://nadeemkhedr.com/2017-03-05---making-a-game-with-react-and-redux-03-core-mechanics/</link><guid isPermaLink="false">https://nadeemkhedr.com/2017-03-05---making-a-game-with-react-and-redux-03-core-mechanics/</guid><pubDate>Sun, 05 Mar 2017 13:22:14 GMT</pubDate><content:encoded>&lt;p&gt;In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
-You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/typemania&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This post is part of the &lt;strong&gt;&lt;em&gt;“Making a game with React and Redux”&lt;/em&gt;&lt;/strong&gt; series&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;/making-a-game-with-react-and-redux-getting-started/&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
@@ -13,12 +13,12 @@ You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/typeman
 &lt;li&gt;
 &lt;p&gt;Create core reducers&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Words (&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/issues/1&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/pull/5&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Blocks (&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/issues/2&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/pull/6&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Input (&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/issues/3&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/pull/9&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Words (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/1&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/5&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Blocks (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/2&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/6&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Input (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/3&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/9&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Create Basic UI Components (&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/issues/4&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/pull/10&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Create Basic UI Components (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/4&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/10&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Plan&lt;/h3&gt;
 &lt;p&gt;My plan of attack is to create a basic version of the game without any words/blocks generation. To achieve that, first I will create detailed issues (stated above) for what exactly I want to get done&lt;/p&gt;
@@ -48,11 +48,11 @@ You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/typeman
 &lt;/blockquote&gt;
 &lt;p&gt;We need this ability, because when the user enters some text, we need to not only update the input in the store but also check if the word matches any other to remove them and the empty blocks, if there are any.
 We also have to reset the input, if any word is matched. We use selectors in this process to get all the matching words and empty blocks.&lt;/p&gt;
-&lt;p&gt;After working on the reducers, I realized that I needed to add templates for PR and Issues, for the sake of keeping everything consistent and not repetitive (you can find the templates in this &lt;a href=&quot;https://github.com/nadeemkhedr/typemania/pull/8&quot;&gt;PR&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Finally, to wire everything together, I need to build the actual UI components (&lt;a href=&quot;https://github.com/nadeemkhedr/typemania/issues/4&quot;&gt;Issue here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;After working on the reducers, I realized that I needed to add templates for PR and Issues, for the sake of keeping everything consistent and not repetitive (you can find the templates in this &lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/8&quot;&gt;PR&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Finally, to wire everything together, I need to build the actual UI components (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/4&quot;&gt;Issue here&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The first step is adding &lt;a href=&quot;https://github.com/ReactTraining/react-router&quot;&gt;react-router&lt;/a&gt;, We will not use routing yet, we will only setup a default route to our game (this will change in the future)&lt;/p&gt;
 &lt;p&gt;In this task, we are creating all the components/containers used for the core game.&lt;/p&gt;
-&lt;p&gt;Summary about what is happening in the &lt;a href=&quot;https://github.com/nadeemkhedr/typemania/pull/10&quot;&gt;PR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Summary about what is happening in the &lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/10&quot;&gt;PR&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Selectors are used all over the place here for fetching the data&lt;/li&gt;
 &lt;li&gt;The &lt;code class=&quot;language-text&quot;&gt;Word&lt;/code&gt; component has logic to highlight the part of a word that matches what is typed&lt;/li&gt;
@@ -90,7 +90,7 @@ We also have to reset the input, if any word is matched. We use selectors in thi
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making a game with React and Redux: 02 Plan, Define, Build Process]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
 You can find the project…]]></description><link>https://nadeemkhedr.com/2017-02-16---making-a-game-with-react-and-redux-02-plan-define-build-process/</link><guid isPermaLink="false">https://nadeemkhedr.com/2017-02-16---making-a-game-with-react-and-redux-02-plan-define-build-process/</guid><pubDate>Thu, 16 Feb 2017 13:22:14 GMT</pubDate><content:encoded>&lt;p&gt;In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
-You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/typemania&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This post is part of the &lt;strong&gt;&lt;em&gt;“Making a game with React and Redux”&lt;/em&gt;&lt;/strong&gt; series&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;/making-a-game-with-react-and-redux-getting-started/&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
@@ -208,7 +208,7 @@ script:
 &lt;p&gt;After that, going to &lt;a href=&quot;https://travis-ci.org&quot;&gt;travis&lt;/a&gt; and adding the github project will do the trick.
 Now Travis will run &lt;code class=&quot;language-text&quot;&gt;npm test&lt;/code&gt; after pushing code while working on a feature&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making a game with React and Redux: 01 Getting Started]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
 You can find the project…]]></description><link>https://nadeemkhedr.com/2017-02-09---making-a-game-with-react-and-redux-getting-started/</link><guid isPermaLink="false">https://nadeemkhedr.com/2017-02-09---making-a-game-with-react-and-redux-getting-started/</guid><pubDate>Thu, 09 Feb 2017 13:22:14 GMT</pubDate><content:encoded>&lt;p&gt;In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
-You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/typemania&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This post is part of the &lt;strong&gt;&lt;em&gt;“Making a game with React and Redux”&lt;/em&gt;&lt;/strong&gt; series&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Getting Started&lt;/strong&gt; &amp;#x3C;-&lt;/li&gt;
