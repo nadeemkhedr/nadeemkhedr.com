@@ -5,7 +5,7 @@ tags: ['ReactJs', 'Redux', 'javascript', 'Game']
 ---
 
 In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
-You can find the project [here](https://github.com/nadeemkhedr/typemania)
+You can find the project [here](https://github.com/nadeemkhedr/react-redux-typing-game)
 
 This post is part of the **_"Making a game with React and Redux"_** series
 
