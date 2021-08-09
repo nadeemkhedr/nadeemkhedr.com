@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nadeem Khedr]]></title><description><![CDATA[The result of playing with web technologies & tools]]></description><link>https://nadeemkhedr.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Mar 2021 21:08:35 GMT</lastBuildDate><item><title><![CDATA[Making a game with React and Redux: 03 Core Mechanics]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nadeem Khedr]]></title><description><![CDATA[The result of playing with web technologies & tools]]></description><link>https://nadeemkhedr.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Aug 2021 23:18:05 GMT</lastBuildDate><item><title><![CDATA[Making a game with React and Redux: 03 Core Mechanics]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
 You can find the project…]]></description><link>https://nadeemkhedr.com/2017-03-05---making-a-game-with-react-and-redux-03-core-mechanics/</link><guid isPermaLink="false">https://nadeemkhedr.com/2017-03-05---making-a-game-with-react-and-redux-03-core-mechanics/</guid><pubDate>Sun, 05 Mar 2017 13:22:14 GMT</pubDate><content:encoded>&lt;p&gt;In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
 You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This post is part of the &lt;strong&gt;&lt;em&gt;“Making a game with React and Redux”&lt;/em&gt;&lt;/strong&gt; series&lt;/p&gt;
@@ -10,8 +10,7 @@ You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/react-r
 &lt;hr&gt;
 &lt;h3&gt;Agenda&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Create core reducers&lt;/p&gt;
+&lt;li&gt;Create core reducers
 &lt;ul&gt;
 &lt;li&gt;Words (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/1&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/5&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Blocks (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/2&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/6&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
@@ -20,8 +19,8 @@ You can find the project &lt;a href=&quot;https://github.com/nadeemkhedr/react-r
 &lt;/li&gt;
 &lt;li&gt;Create Basic UI Components (&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/issues/4&quot;&gt;Issue&lt;/a&gt;/&lt;a href=&quot;https://github.com/nadeemkhedr/react-redux-typing-game/pull/10&quot;&gt;Pull Request&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Plan&lt;/h3&gt;
-&lt;p&gt;My plan of attack is to create a basic version of the game without any words/blocks generation. To achieve that, first I will create detailed issues (stated above) for what exactly I want to get done&lt;/p&gt;
+&lt;p&gt;###Plan
+My plan of attack is to create a basic version of the game without any words/blocks generation. To achieve that, first I will create detailed issues (stated above) for what exactly I want to get done&lt;/p&gt;
 &lt;p&gt;There will be three elements in the game at this point&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Blocks (a block contains multiple words)&lt;/li&gt;
@@ -74,7 +73,7 @@ We also have to reset the input, if any word is matched. We use selectors in thi
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 124.0506329113924%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC2ElEQVQ4y52U208TURCH9x/TqBEUW3pZ2m0LFGiBFhQElRAEtJdga0VqBS80CNEAMTFGX4zPRqCAAcpFHggFfFDARA0hKiQs/TnnLOUSwG7Z5MvszpkzO2cuRxBtZcjLL4decsBgcXJSupRUg9FaiuLyWgjKRxncVfUocdXCXnYVFntFRs4OOdRJTvgDD/H4aTc6u17QQg30FOmJHbJoJIqq0FnNozQVuE4e4f58GUjJIhPzDzpT43wvQjIWmZIUDBPlk0k9pUFndqgu0F6ETEHGRucVGMurYSytgkg4Kq7jcm0jzIXuzCJkG8w2ahuPH7mRMHTBIAyBACLRHnT19MFSVMFzyu0KXcfg5k4d7msQsnNt4Oj2yCLOa63YXUsHs9dYuFMh2t0HhV4cft+v+z+dz3rxvO8VhLGJaTDG49OYmJwhSXCp6FXBbacwOT0LgYXKOHPRhFNZIk5nK5y7JCG1lhZKz9kcMy+MIFFCTURlTQMCoXY0eUOou+nn08KKIdndOwU5HmbD8uekzqBJoZahtmj0BNEW6cS98BNEOqKwFVfyP5549BhsStitoz/ixlHf2KlJIdgRD6LoMnbIFLmmEmjzijkasYijNdF7XhEfwf0nSXtkdinUN7Xgli8Eb8t9+INh+AJhNPvuwnunDTU3mvnFmzZC187osaKw6gZbO3CbnAZa2xGi4nhaWuELPkBdg5dvYLaH0+LanfcSNnoa0U7HtNMIWamfLAoaiZOlVfrsgi6fbFgayPYoaC3HUAArdYYwNDKOj7ExDJAcGJnA0GgcQ5/iitxhkGBrxzHI5PA4RsemICz+BtYA/NpWWN0EVjYy5zvtW1wHzfLcKpYWEpifX0AikcDi0hckk8DWlgxZVgezRVLGyroM4c37D4g+asfL/n68e/saw7EYlCeJTJ+1jSSE2NIm5ije2eUNzHz9g8/f/iLxcxvzP2RiWzULtCe+LOMfyqHixr1r8FwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 124.0506329113924%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVQ4y52U208TURDG9x/TqAEUu723223phbbbCwqCSAgCSttga0VqBUUahGiAmBijL8ZnI1DAtJSLPBAK+KBcEjCEqDSh7WfOWcolgG3Z5JfZnTM7O2dmv8Oo9ALUBgfknBUKnY2S8+VsISh5OyyOOjDigwBXdSMqnXUwCbegM7mLSnYioYyzwed/iucv+tHb9xoWRy3kOtv5E5JqOJMbRlsNrVJT4Tx/hUf7peDttDKV4XiyQpIfVqgXoCJO3k7R8AK1cs4GmdZa8IAOKyQOvQCl7SaUjhoo7dVQ2athddfjRl0ztEZXcRWSF7R6B+RtPkjDIcgCASj8foQjA+gbGILO7KY9pXFG5xm4aFKr6zaYMqkeFNkhpTI9SlgeB2v5IPESHU3KRPqHIDKIk/dHff+n9+UgXg29BRObmgUhnpjF1PQc4ok5xKkV/QVBY2cwPTsPhpRKuHRNgwulKlwsE7lynUNuLS8sj8vlWjoYhjO6oDG6UFXbBH+wCy2eIBru+qhayDA4k2t/IGdDYkj/bO56ohQBSr2A5rYAOsO9eBTqQbg7Ar2lin7x3NIjEJWQU0d+yolT+I+dU4rBQbd4HNFXdELikGoqwaotFInKTGE1FkjUZirBozvJu2VyKDS2tOOeNwhP+2P4AiF4/SG0eh/C86ATtXda6cGbt0LnvvTIUMh0Ax3duO8Nwt/RhWCoB23tHfAGnqChyUNfILEn2+I80HslkZ5EZQKrNqFMyqOE1YlIOEopK/5nV2UGsGrSBhPY01CbUa6oAG+pAjM2EceXaAwjE3GMTExhbDKBsa8J0e4zOpmga2cxSux4HJOxGTDLv4FtAL8yIuspYG23eDZSwPIOwMQW1rGylMTi4hKSySSWV74jmwX29tJIpwuDxCKbxtpOGsz7T58RedaFN8PD+PjhHcajUYhXFsVe27tZMNGVFBY2Uphf3cXcjz/49vMvklsZLG6msbiZKZilrQwSq2n8A8qh4sY/+4+AAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -86,6 +85,7 @@ We also have to reset the input, if any word is matched. We use selectors in thi
         sizes=&quot;(max-width: 304px) 100vw, 304px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Making a game with React and Redux: 02 Plan, Define, Build Process]]></title><description><![CDATA[In this series, I am creating a typing game with React and Redux. Including setting up a backlog, CI, and Testing.
@@ -117,7 +117,7 @@ In this post, I will cover these points and, at the same time in the repo I will
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.84810126582278%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVQ4y62T2QqEMAxF+8WKT36w+CIuRetSt4w3TKCK6ziBi7Exx1vaqCAIyPf9Q6EehiHnnuedfou6GoaB+r4nPMdxZEmOdZFb3wq1aZooSRJStq6pt5bKsuRGRNd1lOc51UtNa013Az3KRBE1VcUQAQKUpinN80xN0/DzSogsy0jpoljZRrRtS8YYzu3iXhqOYgUcvxA0Aiy5BJxLwxF4BUQDAHA1OXBZF7i7tVPg9s+um731R8C9rbngRw63jXtrjxxeneTtU95z9ItWwH8FAzF/cj3eCIPBwDiO+eXt1jG2GFeFRC7yG2H+4fADqwjN58CDoEgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 77.84810126582278%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVQ4y62T2wqEMAxE+8WKT36w+CLecG21Ws0yYbNU8bpuYDA25jiljYqiiMIw3BXqcRxzHgTB4beoq3EcaRgGwtM5x5Ic6yK/vhZq0zRRlmWkrNY0WEtN03Ajou97KsuStNZU1zVdDfSoNknIvF4MESBAeZ7TPM9kjOHnmRBFUZCqq2phG9F1HbVty7m19tuwFwug+0DQCLDkEnAuDXvgBRANAMDV5MFlXeD+1g6B6z/7brbWbwG3tuaDbzlcN26t3XJ4dpKXT3nL0S9aAP8VDMT8yfV4IgwGA9M05ZenW8fYYlwVErnIT4T5h8M3qwjN5xCnmy4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -131,6 +131,7 @@ In this post, I will cover these points and, at the same time in the repo I will
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
@@ -146,14 +147,12 @@ In this post, I will cover these points and, at the same time in the repo I will
 &lt;ul&gt;
 &lt;li&gt;Health system (you shouldn’t die after health reaches zero)&lt;/li&gt;
 &lt;li&gt;Increased difficulty with time&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;powerups&lt;/p&gt;
+&lt;li&gt;powerups
 &lt;ul&gt;
 &lt;li&gt;Freeze (pause the timer), Fire (destroy a block)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Statistics&lt;/p&gt;
+&lt;li&gt;Statistics
 &lt;ul&gt;
 &lt;li&gt;how many words you wrote&lt;/li&gt;
 &lt;li&gt;random word definition after the game finishes&lt;/li&gt;
@@ -193,7 +192,7 @@ Setting a release plan and also boundaries for each task instead of just working
 &lt;/ul&gt;
 &lt;p&gt;we can use &lt;a href=&quot;https://github.com/typicode/husky&quot;&gt;husky&lt;/a&gt; for preventing bad commits; it adds hooks to run &lt;code class=&quot;language-text&quot;&gt;precommit&lt;/code&gt; &amp;#x26; &lt;code class=&quot;language-text&quot;&gt;prepush&lt;/code&gt; scripts, so what we could do is, in &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;scripts: {
-    &amp;quot;precommit&amp;quot;: &amp;quot;npm run lint &amp;amp;&amp;amp; npm test&amp;quot;
+    &quot;precommit&quot;: &quot;npm run lint &amp;amp;&amp;amp; npm test&quot;
     ...
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Adding Travis is simple, we will create &lt;code class=&quot;language-text&quot;&gt;.travis.yml&lt;/code&gt; with the following&lt;/p&gt;
@@ -229,8 +228,7 @@ In every blog I’ll talk about what I should have done, what problems I had, an
 &lt;li&gt;install emacs and create &lt;code class=&quot;language-text&quot;&gt;~/.emacs.d/init.el&lt;/code&gt; that is the equivalent to &lt;code class=&quot;language-text&quot;&gt;vimrc&lt;/code&gt; file&lt;/li&gt;
 &lt;li&gt;the best way to learn how emacs works, read the emacs configs for other smart people&lt;/li&gt;
 &lt;li&gt;Its really important to not copy the whole config files, copy bit by bit and understand what each bit does&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;emacs has package manager built in&lt;/p&gt;
+&lt;li&gt;emacs has package manager built in
 &lt;ul&gt;
 &lt;li&gt;its more like vim &lt;code class=&quot;language-text&quot;&gt;pathogen&lt;/code&gt; in the sense that the packages you have are not reflected in the config itself&lt;/li&gt;
 &lt;li&gt;to get around that you install &lt;code class=&quot;language-text&quot;&gt;use-package&lt;/code&gt; if you pass it &lt;code class=&quot;language-text&quot;&gt;:ensure t&lt;/code&gt;, then it will install the package when emacs start (ex: &lt;code class=&quot;language-text&quot;&gt;(use-package evil :ensure t)&lt;/code&gt;)&lt;/li&gt;
@@ -238,9 +236,9 @@ In every blog I’ll talk about what I should have done, what problems I had, an
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(add-to-list &amp;#39;package-archives &amp;#39;(&amp;quot;org&amp;quot; . &amp;quot;http://orgmode.org/elpa/&amp;quot;))
-(add-to-list &amp;#39;package-archives &amp;#39;(&amp;quot;melpa&amp;quot; . &amp;quot;http://melpa.org/packages/&amp;quot;))
-(add-to-list &amp;#39;package-archives &amp;#39;(&amp;quot;melpa-stable&amp;quot; . &amp;quot;http://stable.melpa.org/packages/&amp;quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(add-to-list &apos;package-archives &apos;(&quot;org&quot; . &quot;http://orgmode.org/elpa/&quot;))
+(add-to-list &apos;package-archives &apos;(&quot;melpa&quot; . &quot;http://melpa.org/packages/&quot;))
+(add-to-list &apos;package-archives &apos;(&quot;melpa-stable&quot; . &quot;http://stable.melpa.org/packages/&quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
 &lt;h2&gt;Plugin Specific Tips&lt;/h2&gt;
 &lt;h3&gt;Neotree &lt;a href=&quot;https://github.com/jaypei/emacs-neotree&quot;&gt;link&lt;/a&gt;&lt;/h3&gt;
@@ -250,24 +248,24 @@ In every blog I’ll talk about what I should have done, what problems I had, an
   :config
 
 	(evil-leader/set-key
-	&amp;quot;m&amp;quot;  &amp;#39;neotree-toggle
-	&amp;quot;n&amp;quot;  &amp;#39;neotree-project-dir)
+	&quot;m&quot;  &apos;neotree-toggle
+	&quot;n&quot;  &apos;neotree-project-dir)
 
-  (setq projectile-switch-project-action &amp;#39;neotree-projectile-action)
-  (add-hook &amp;#39;neotree-mode-hook
+  (setq projectile-switch-project-action &apos;neotree-projectile-action)
+  (add-hook &apos;neotree-mode-hook
     (lambda ()
-      (define-key evil-normal-state-local-map (kbd &amp;quot;q&amp;quot;) &amp;#39;neotree-hide)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;I&amp;quot;) &amp;#39;neotree-hidden-file-toggle)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;z&amp;quot;) &amp;#39;neotree-stretch-toggle)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;R&amp;quot;) &amp;#39;neotree-refresh)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;m&amp;quot;) &amp;#39;neotree-rename-node)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;c&amp;quot;) &amp;#39;neotree-create-node)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;d&amp;quot;) &amp;#39;neotree-delete-node)
+      (define-key evil-normal-state-local-map (kbd &quot;q&quot;) &apos;neotree-hide)
+      (define-key evil-normal-state-local-map (kbd &quot;I&quot;) &apos;neotree-hidden-file-toggle)
+      (define-key evil-normal-state-local-map (kbd &quot;z&quot;) &apos;neotree-stretch-toggle)
+      (define-key evil-normal-state-local-map (kbd &quot;R&quot;) &apos;neotree-refresh)
+      (define-key evil-normal-state-local-map (kbd &quot;m&quot;) &apos;neotree-rename-node)
+      (define-key evil-normal-state-local-map (kbd &quot;c&quot;) &apos;neotree-create-node)
+      (define-key evil-normal-state-local-map (kbd &quot;d&quot;) &apos;neotree-delete-node)
 
-      (define-key evil-normal-state-local-map (kbd &amp;quot;s&amp;quot;) &amp;#39;neotree-enter-vertical-split)
-      (define-key evil-normal-state-local-map (kbd &amp;quot;S&amp;quot;) &amp;#39;neotree-enter-horizontal-split)
+      (define-key evil-normal-state-local-map (kbd &quot;s&quot;) &apos;neotree-enter-vertical-split)
+      (define-key evil-normal-state-local-map (kbd &quot;S&quot;) &apos;neotree-enter-horizontal-split)
 
-      (define-key evil-normal-state-local-map (kbd &amp;quot;RET&amp;quot;) &amp;#39;neotree-enter))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      (define-key evil-normal-state-local-map (kbd &quot;RET&quot;) &apos;neotree-enter))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Most of the code here is self-explanatory, it just makes it work with evil binding and added some extra keys&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt; for move&lt;/li&gt;
@@ -278,21 +276,21 @@ In every blog I’ll talk about what I should have done, what problems I had, an
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;R&lt;/code&gt; for refresh&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;s&lt;/code&gt; open in vsplit&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;S&lt;/code&gt; open in split&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&amp;gt; m&lt;/code&gt; toggle neotree&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&amp;gt; n&lt;/code&gt; open neotree and find current file in it&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&gt; m&lt;/code&gt; toggle neotree&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&gt; n&lt;/code&gt; open neotree and find current file in it&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note: also there is a line related to &lt;code class=&quot;language-text&quot;&gt;projectile&lt;/code&gt; (will talk later about it) which basically refreshes neotree whenever you change projects&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note: &lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; is added by another package &lt;code class=&quot;language-text&quot;&gt;evil-leader&lt;/code&gt; (will talk about it later)&lt;/p&gt;
+&lt;p&gt;Note: &lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&gt;&lt;/code&gt; is added by another package &lt;code class=&quot;language-text&quot;&gt;evil-leader&lt;/code&gt; (will talk about it later)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h5&gt;Extra Tip&lt;/h5&gt;
 &lt;p&gt;Add the following to the config&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(use-package find-file-in-project :ensure t)
 
 (defun neotree-project-dir ()
-  &amp;quot;Open NeoTree using the git root.&amp;quot;
+  &quot;Open NeoTree using the git root.&quot;
   (interactive)
   (let ((project-dir (ffip-project-root))
         (file-name (buffer-file-name)))
@@ -300,8 +298,8 @@ In every blog I’ll talk about what I should have done, what problems I had, an
         (progn
         (neotree-dir project-dir)
         (neotree-find file-name))
-    (message &amp;quot;Could not find git project root.&amp;quot;))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;So earlier I said &lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&amp;gt; n&lt;/code&gt; open the current file in &lt;code class=&quot;language-text&quot;&gt;neotree&lt;/code&gt;, the annoying part is if the file is in sub-folder, it opens the subfolder as the root, it doesn’t work like NERDTree (the root is always the git root)&lt;/p&gt;
+    (message &quot;Could not find git project root.&quot;))))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So earlier I said &lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&gt; n&lt;/code&gt; open the current file in &lt;code class=&quot;language-text&quot;&gt;neotree&lt;/code&gt;, the annoying part is if the file is in sub-folder, it opens the subfolder as the root, it doesn’t work like NERDTree (the root is always the git root)&lt;/p&gt;
 &lt;p&gt;The lines added above is to do exactly that, it’s using another package called &lt;code class=&quot;language-text&quot;&gt;find-file-in-project&lt;/code&gt; and using its functionality to always specify the git root as the root when opening any file&lt;/p&gt;
 &lt;h3&gt;company mode &lt;a href=&quot;http://company-mode.github.io/&quot;&gt;link&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Company mode is a text completion framework, basically, it’s the implementation of how text is autocompleted and you could provide implementation of what are the complete options using custom plugins&lt;/p&gt;
@@ -315,10 +313,10 @@ In every blog I’ll talk about what I should have done, what problems I had, an
   (global-company-mode)
   (setq company-idle-delay 0.2)
   (setq company-selection-wrap-around t)
-  (define-key company-active-map [tab] &amp;#39;company-complete)
-  (define-key company-active-map (kbd &amp;quot;C-n&amp;quot;) &amp;#39;company-select-next)
-  (define-key company-active-map (kbd &amp;quot;C-p&amp;quot;) &amp;#39;company-select-previous))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;this is really basic, install and enable company mode globally then set idle time that user have to wait before the options appear, in our case its &lt;code class=&quot;language-text&quot;&gt;0.2s&lt;/code&gt;&lt;/p&gt;
+  (define-key company-active-map [tab] &apos;company-complete)
+  (define-key company-active-map (kbd &quot;C-n&quot;) &apos;company-select-next)
+  (define-key company-active-map (kbd &quot;C-p&quot;) &apos;company-select-previous))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;this is really basic, install and enable company mode globally then set idle time that user have to wait before the options appear, in our case its &lt;code class=&quot;language-text&quot;&gt;0.2s &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;we are also setting &lt;code class=&quot;language-text&quot;&gt;company-selection-wrap-around&lt;/code&gt; to true, this makes a previous/next selection in the popup cycles&lt;/p&gt;
 &lt;p&gt;lastly, we define custom mapping keys&lt;/p&gt;
 &lt;ul&gt;
@@ -335,9 +333,9 @@ okay .. that’s a lie, &lt;code class=&quot;language-text&quot;&gt;Helm&lt;/cod
   (helm-mode 1)
   (setq helm-autoresize-mode t)
   (setq helm-buffer-max-length 40)
-  (global-set-key (kbd &amp;quot;M-x&amp;quot;) #&amp;#39;helm-M-x)
-  (define-key helm-map (kbd &amp;quot;S-SPC&amp;quot;) &amp;#39;helm-toggle-visible-mark)
-  (define-key helm-find-files-map (kbd &amp;quot;C-k&amp;quot;) &amp;#39;helm-find-files-up-one-level))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  (global-set-key (kbd &quot;M-x&quot;) #&apos;helm-M-x)
+  (define-key helm-map (kbd &quot;S-SPC&quot;) &apos;helm-toggle-visible-mark)
+  (define-key helm-find-files-map (kbd &quot;C-k&quot;) &apos;helm-find-files-up-one-level))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;this will install &lt;code class=&quot;language-text&quot;&gt;helm&lt;/code&gt; along with basic configs defining a couple of key maps&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;M-x&lt;/code&gt; now uses &lt;code class=&quot;language-text&quot;&gt;helm-m-x&lt;/code&gt; with auto-complete instead of the built in listing&lt;/li&gt;
@@ -352,33 +350,36 @@ okay .. that’s a lie, &lt;code class=&quot;language-text&quot;&gt;Helm&lt;/cod
   :ensure t
   :defer t
   :config
-  (projectile-global-mode))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  (projectile-global-mode))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;dead simple, we are enabling projectile globally, we are going to use projectile through helm interface using &lt;code class=&quot;language-text&quot;&gt;helm-projectile&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;helm-projectile &lt;a href=&quot;https://github.com/bbatsov/helm-projectile&quot;&gt;link&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;this is the plugin that connects projectile to use with helm, now you can find files in the project that are not ignored in &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; or switch between projects all using the &lt;code class=&quot;language-text&quot;&gt;helm&lt;/code&gt; interface&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(use-package helm-projectile
-  :bind ((&amp;quot;C-S-P&amp;quot; . helm-projectile-switch-project)
+  :bind ((&quot;C-S-P&quot; . helm-projectile-switch-project)
          :map evil-normal-state-map
-         (&amp;quot;C-p&amp;quot; . helm-projectile))
+         (&quot;C-p&quot; . helm-projectile))
   :ensure t
   :config
   (evil-leader/set-key
-    &amp;quot;ps&amp;quot; &amp;#39;helm-projectile-ag
-    &amp;quot;pa&amp;quot; &amp;#39;helm-projectile-find-file-in-known-projects
+    &quot;ps&quot; &apos;helm-projectile-ag
+    &quot;pa&quot; &apos;helm-projectile-find-file-in-known-projects
   ))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;bind the following&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;C-P&lt;/code&gt; to find a file in the current project&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;C-Shit-P&lt;/code&gt; to switch projects&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&amp;gt;ps&lt;/code&gt; find phrase in current project (if you have &lt;code class=&quot;language-text&quot;&gt;ag&lt;/code&gt; installed)&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&amp;gt;pa&lt;/code&gt; find file in all projects&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&gt;ps&lt;/code&gt; find phrase in current project (if you have &lt;code class=&quot;language-text&quot;&gt;ag&lt;/code&gt; installed)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;leader&gt;pa&lt;/code&gt; find file in all projects&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Why I switched from vim to emacs + evil mode]]></title><description><![CDATA[Emacs … What ? Without a doubt one of the best things i did for the last couple of years was learning vim, although we are programmers and…]]></description><link>https://nadeemkhedr.com/2016-08-07---why-i-switched-from-vim-to-emacs-with-evil-mode/</link><guid isPermaLink="false">https://nadeemkhedr.com/2016-08-07---why-i-switched-from-vim-to-emacs-with-evil-mode/</guid><pubDate>Sun, 07 Aug 2016 05:30:57 GMT</pubDate><content:encoded>&lt;h2&gt;Emacs … What ?&lt;/h2&gt;
 &lt;p&gt;Without a doubt one of the best things i did for the last couple of years was learning vim, although we are programmers and we always try to find the smart way to solve dumb problems, the way we edit/navigate text (at least for me) is very dumb, using mouse to select and copy then past, type the arrow keys to navigate … my head hearts when I try to remember how it was like.&lt;/p&gt;
 &lt;p&gt;vim power in editing documents is unparalleled and it improved my productivity in so many way, that said .. why i am talking about emacs ?&lt;/p&gt;
 &lt;h3&gt;Why vim bothered me&lt;/h3&gt;
-&lt;p&gt;vim is great tool for manipulating and navigating text, but its an terrible/unmaintainable&lt;strong&gt;*&lt;/strong&gt; software the biggest two things that bothered me was&lt;/p&gt;
+&lt;p&gt;vim is great tool for manipulating and navigating text, but its an terrible/unmaintainable***** software the biggest two things that bothered me was&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;async feature, which vim completely lacks, if you want to do linting/fuzzy finding files you have to wait till the operation is completed, which results in an annoying freeze whenever you save file for linting or if you are finding a file huge directory using something like ctrl-p, the editor freezes till the operation is completed&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;async feature, which vim completely lacks, if you want to do linting/fuzzy finding files you have to wait till the operation is completed, which results in an annoying freeze whenever you save file for linting or if you are finding a file huge directory using something like ctrl-p, the editor freezes till the operation is completed&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;extending vim with vimscript, don’t have much to say here other than emacs elisp is better in every way, people write there plugins using TDD in emacs, that’s how cool it is.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;* this is the words of a lot more experienced vim people, I’ve been only using it for more than a couple of years.. but a lot more smarter people after reading the vim source code concluded that.&lt;/em&gt;
@@ -416,22 +417,26 @@ okay .. that’s a lie, &lt;code class=&quot;language-text&quot;&gt;Helm&lt;/cod
 &lt;code class=&quot;language-text&quot;&gt;npm install -g webpack&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To create a new react application, create a new folder and run the following commands&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm init&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;npm install the following list&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm init&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;npm install the following list&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;dependencies&amp;quot;: {
-    &amp;quot;babel-loader&amp;quot;: &amp;quot;^6.2.0&amp;quot;,
-    &amp;quot;babel-plugin-add-module-exports&amp;quot;: &amp;quot;^0.1.2&amp;quot;,
-    &amp;quot;babel-plugin-react-html-attrs&amp;quot;: &amp;quot;^2.0.0&amp;quot;,
-    &amp;quot;babel-plugin-transform-class-properties&amp;quot;: &amp;quot;^6.3.13&amp;quot;,
-    &amp;quot;babel-plugin-transform-decorators-legacy&amp;quot;: &amp;quot;^1.3.4&amp;quot;,
-    &amp;quot;babel-preset-es2015&amp;quot;: &amp;quot;^6.3.13&amp;quot;,
-    &amp;quot;babel-preset-react&amp;quot;: &amp;quot;^6.3.13&amp;quot;,
-    &amp;quot;babel-preset-stage-0&amp;quot;: &amp;quot;^6.3.13&amp;quot;,
-    &amp;quot;react&amp;quot;: &amp;quot;^0.14.6&amp;quot;,
-    &amp;quot;react-dom&amp;quot;: &amp;quot;^0.14.6&amp;quot;,
-    &amp;quot;webpack&amp;quot;: &amp;quot;^1.12.9&amp;quot;,
-    &amp;quot;webpack-dev-server&amp;quot;: &amp;quot;^1.14.1&amp;quot;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&quot;dependencies&quot;: {
+    &quot;babel-loader&quot;: &quot;^6.2.0&quot;,
+    &quot;babel-plugin-add-module-exports&quot;: &quot;^0.1.2&quot;,
+    &quot;babel-plugin-react-html-attrs&quot;: &quot;^2.0.0&quot;,
+    &quot;babel-plugin-transform-class-properties&quot;: &quot;^6.3.13&quot;,
+    &quot;babel-plugin-transform-decorators-legacy&quot;: &quot;^1.3.4&quot;,
+    &quot;babel-preset-es2015&quot;: &quot;^6.3.13&quot;,
+    &quot;babel-preset-react&quot;: &quot;^6.3.13&quot;,
+    &quot;babel-preset-stage-0&quot;: &quot;^6.3.13&quot;,
+    &quot;react&quot;: &quot;^0.14.6&quot;,
+    &quot;react-dom&quot;: &quot;^0.14.6&quot;,
+    &quot;webpack&quot;: &quot;^1.12.9&quot;,
+    &quot;webpack-dev-server&quot;: &quot;^1.14.1&quot;
   },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;let me explain some of the packages introduced in the list above&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://webpack.github.io/docs/webpack-dev-server.html&quot;&gt;wepack-dev-server&lt;/a&gt;: a tool for running &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt; command in watch mode so whenever any file is changed the compilation happens and fires up a localhost server that serves all the files&lt;/p&gt;
@@ -482,8 +487,12 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The two interesting properties here are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;entry&lt;/code&gt;: which will be our entry point to the app the first script that runs, and through it, loads the rest of the app&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;output&lt;/code&gt;: this is the result when running webpack, this will be referenced in &lt;code class=&quot;language-text&quot;&gt;index.html&lt;/code&gt; that we will create bellow&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;entry&lt;/code&gt;: which will be our entry point to the app the first script that runs, and through it, loads the rest of the app&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;output&lt;/code&gt;: this is the result when running webpack, this will be referenced in &lt;code class=&quot;language-text&quot;&gt;index.html&lt;/code&gt; that we will create bellow&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;this is a pretty basic webpack config that checks the env, if its production will optimize the code by uglifying it and removing duplicate code and sourcemaps.&lt;/p&gt;
 &lt;p&gt;There is a concepts in &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt; &lt;em&gt;(actually &lt;code class=&quot;language-text&quot;&gt;babel&lt;/code&gt;)&lt;/em&gt; which is called &lt;a href=&quot;https://github.com/babel/babel-loader&quot;&gt;loaders&lt;/a&gt; through them we can write &lt;em&gt;(ES6, ES7, JSX, …)&lt;/em&gt;, and it will compile all that to &lt;code class=&quot;language-text&quot;&gt;ES5&lt;/code&gt; and will run on all browsers, take a look at the previous link for more info&lt;/p&gt;
@@ -496,51 +505,56 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;/blockquote&gt;
 &lt;p&gt;At this point we are done with creating our small build system, its a little effort at first, but it makes our life so much easier, specially when the project grows&lt;/p&gt;
 &lt;hr&gt;
-&lt;h4&gt;Cool tip on running your app&lt;/h4&gt;
+&lt;p&gt;####Cool tip on running your app&lt;/p&gt;
 &lt;p&gt;One of the dependencies for our app is &lt;code class=&quot;language-text&quot;&gt;webpack-dev-server&lt;/code&gt;, you could start the app by running&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;webpack-dev-server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This will actually not work, we need to tell it the base of our app is inside &lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt;, so we would run it with the following instead&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;webpack-dev-server --content-base src&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Instead of doing this every time that we would want to run our app, we could add a command in &lt;code class=&quot;language-text&quot;&gt;scripts&lt;/code&gt; in our &lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  &amp;quot;dependencies&amp;quot;: {
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  &quot;dependencies&quot;: {
     ...
   },
-  &amp;quot;scripts&amp;quot;: {
-    &amp;quot;dev&amp;quot;: &amp;quot;./node_modules/.bin/webpack-dev-server --content-base src --inline --hot&amp;quot;,
-    &amp;quot;test&amp;quot;: &amp;quot;echo \&amp;quot;Error: no test specified\&amp;quot; &amp;amp;&amp;amp; exit 1&amp;quot;
-  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;./node_modules/.bin/webpack-dev-server --content-base src --inline --hot&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;
+  },
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;We are passing two extra flags&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;--inline&lt;/code&gt;: this will not show a status bar at the top (shows by default)&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;--hot&lt;/code&gt; this enables hot module replacement, awesome feature, instead of refreshing the whole page, it just replaces the components that was edited, read more about it &lt;a href=&quot;https://webpack.github.io/docs/hot-module-replacement-with-webpack.html&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;--inline&lt;/code&gt;: this will not show a status bar at the top (shows by default)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;--hot&lt;/code&gt; this enables hot module replacement, awesome feature, instead of refreshing the whole page, it just replaces the components that was edited, read more about it &lt;a href=&quot;https://webpack.github.io/docs/hot-module-replacement-with-webpack.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now whenever we want to run the app we would type &lt;code class=&quot;language-text&quot;&gt;npm run dev&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4&gt;Basic App Structure&lt;/h4&gt;
 &lt;p&gt;our directory structure should look like this&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; node_modules/
-&amp;gt; src/
-   &amp;gt; js/
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; node_modules/
+&gt; src/
+   &gt; js/
      - app.js
-     &amp;gt; components/
+     &gt; components/
        - Hello-World.js
    - index.html
 - package.json
 - webpack.config.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;./index.html&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-  &amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Learning React Series&amp;lt;/title&amp;gt;
-  &amp;lt;/head&amp;gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&gt;
+&amp;lt;html&gt;
+  &amp;lt;head&gt;
+    &amp;lt;meta charset=&quot;utf-8&quot;&gt;
+    &amp;lt;title&gt;Learning React Series&amp;lt;/title&gt;
+  &amp;lt;/head&gt;
 
-  &amp;lt;body&amp;gt;
-    &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-    &amp;lt;script src=&amp;quot;app.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &amp;lt;body&gt;
+    &amp;lt;div id=&quot;app&quot;&gt;&amp;lt;/div&gt;
+    &amp;lt;script src=&quot;app.min.js&quot;&gt;&amp;lt;/script&gt;
+  &amp;lt;/body&gt;
+&amp;lt;/html&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This is just blank html boilerplate, the only interesting part that we are referencing &lt;code class=&quot;language-text&quot;&gt;app.min.js&lt;/code&gt; &lt;em&gt;(that we specified in the &lt;code class=&quot;language-text&quot;&gt;webpack.config.js&lt;/code&gt;)&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;./js/app.js&lt;/code&gt;&lt;/p&gt;
@@ -696,12 +710,12 @@ gulp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;p&gt;call to &lt;code class=&quot;language-text&quot;&gt;this._super()&lt;/code&gt; its mandatory.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;And to call it&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;hbs&quot;&gt;&lt;pre class=&quot;language-hbs&quot;&gt;&lt;code class=&quot;language-hbs&quot;&gt;{{view App.SelectView
-  content=items
-  value=item
-  prompt=’Select Item’
-  onChange=’saveItem’
-}}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Redirect to the original requested page after login using AngularJs]]></title><description><![CDATA[What we want to do is that when the user tries to go to a page and he is not logged in, we want to redirect him back to that page after he…]]></description><link>https://nadeemkhedr.com/2014-03-16---redirect-to-the-original-requested-page-after-login-using-angularjs/</link><guid isPermaLink="false">https://nadeemkhedr.com/2014-03-16---redirect-to-the-original-requested-page-after-login-using-angularjs/</guid><pubDate>Sun, 16 Mar 2014 14:32:54 GMT</pubDate><content:encoded>&lt;p&gt;What we want to do is that when the user tries to go to a page and he is not logged in, we want to redirect him back to that page after he login successfully There is two different scenarios that we want to handle&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;hbs&quot;&gt;&lt;pre class=&quot;language-hbs&quot;&gt;&lt;code class=&quot;language-hbs&quot;&gt;&lt;span class=&quot;token delimiter punctuation&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;SelectView&lt;/span&gt;
+  &lt;span class=&quot;token variable&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;items&lt;/span&gt;
+  &lt;span class=&quot;token variable&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;item&lt;/span&gt;
+  &lt;span class=&quot;token variable&quot;&gt;prompt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;’Select&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;Item’&lt;/span&gt;
+  &lt;span class=&quot;token variable&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;’saveItem’&lt;/span&gt;
+&lt;span class=&quot;token delimiter punctuation&quot;&gt;}}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Redirect to the original requested page after login using AngularJs]]></title><description><![CDATA[What we want to do is that when the user tries to go to a page and he is not logged in, we want to redirect him back to that page after he…]]></description><link>https://nadeemkhedr.com/2014-03-16---redirect-to-the-original-requested-page-after-login-using-angularjs/</link><guid isPermaLink="false">https://nadeemkhedr.com/2014-03-16---redirect-to-the-original-requested-page-after-login-using-angularjs/</guid><pubDate>Sun, 16 Mar 2014 14:32:54 GMT</pubDate><content:encoded>&lt;p&gt;What we want to do is that when the user tries to go to a page and he is not logged in, we want to redirect him back to that page after he login successfully There is two different scenarios that we want to handle&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The user is not logged in to our site and tries to access it &lt;em&gt;(no cookie stored)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;When the user is already in our site and he makes a request to the server and the the server  returns unauthorized &lt;code class=&quot;language-text&quot;&gt;401&lt;/code&gt; (in case the user is logged in and the cookie times out)&lt;/li&gt;
@@ -986,7 +1000,7 @@ angular&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Why would you want to do that ?&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;And why use jQuery ? isn’t it evil to do that&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;We are doing this because we want to get all the permissions before firing up the angular app &lt;em&gt;(Like a &lt;a href=&quot;http://docs.angularjs.org/api/ngRoute.$routeProvider%22%20Angular%20Route%22&quot;&gt;resolve&lt;/a&gt; method for every route)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We are doing this because we want to get all the permissions before firing up the angular app &lt;em&gt;(Like a [resolve](&lt;a href=&quot;http://docs.angularjs.org/api/ngRoute.$routeProvider&quot;&gt;http://docs.angularjs.org/api/ngRoute.$routeProvider&lt;/a&gt;” Angular Route”) method for every route)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;We want to get all the users’ permissions that we will be using as the base for running all the permissions logic&lt;/p&gt;
 &lt;p&gt;And we are using &lt;code class=&quot;language-text&quot;&gt;$.ajax&lt;/code&gt; because the app at that point is not loaded so we can’t use angular services&lt;/p&gt;
 &lt;h3&gt;How we are using the data returned ?&lt;/h3&gt;
@@ -1197,7 +1211,7 @@ app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 &lt;/ol&gt;
 &lt;p&gt;I really want to separate between the second and the third one, don’t like to merge both of them into one &lt;code class=&quot;language-text&quot;&gt;beforeEach&lt;/code&gt;. The reason is that I like to separate the responsibilities in each &lt;code class=&quot;language-text&quot;&gt;beforeEach&lt;/code&gt; that makes the code cleaner for me&lt;/p&gt;
 &lt;h3&gt;Note on inject&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;inject()&lt;/code&gt; is defined in &lt;code class=&quot;language-text&quot;&gt;angular.mock.inject()&lt;/code&gt;for ease of use its defined also in the global &lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt; object its in angular.mock.js , so its only used in testing environment the note about the inject its that the &lt;em&gt;injector unwraps the underscores (\&lt;/em&gt;) from around the parameter names when matching_&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;inject()&lt;/code&gt; is defined in &lt;code class=&quot;language-text&quot;&gt;angular.mock.inject()&lt;/code&gt;for ease of use its defined also in the global &lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt; object its in angular.mock.js , so its only used in testing environment the note about the inject its that the &lt;em&gt;injector unwraps the underscores (_) from around the parameter names when matching&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Why would that be useful ?&lt;/p&gt;
 &lt;p&gt;The problem is that we would, most likely  want the variable to have the same name of the reference, if we did that we would have a problem, since the parameter to the &lt;code class=&quot;language-text&quot;&gt;inject()&lt;/code&gt; function would hide the outer variable. To help with this, the injected parameters can, optionally, be enclosed with underscores. These are ignored by the injector when the reference name is resolved.&lt;/p&gt;
 &lt;h4&gt;Example:&lt;/h4&gt;
@@ -1408,15 +1422,15 @@ angular&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;the reason we are using those instead of the normal angular change event because change will fire on each character added/removed, we want to make an ajax call after the user finish typing not while he is typing&lt;/p&gt;
 &lt;h6&gt;The following is the code for the &lt;code class=&quot;language-text&quot;&gt;on-blur-change&lt;/code&gt; directive&lt;/h6&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// onBlurChange.js
-angular.module(&amp;#39;MyApp&amp;#39;).directive(&amp;#39;onBlurChange&amp;#39;, function ($parse) {
+angular.module(&apos;MyApp&apos;).directive(&apos;onBlurChange&apos;, function ($parse) {
   return function (scope, element, attr) {
-    var fn = $parse(attr[&amp;#39;onBlurChange&amp;#39;]);
+    var fn = $parse(attr[&apos;onBlurChange&apos;]);
     var hasChanged = false;
-    element.on(&amp;#39;change&amp;#39;, function (event) {
+    element.on(&apos;change&apos;, function (event) {
       hasChanged = true;
     });
 
-    element.on(&amp;#39;blur&amp;#39;, function (event) {
+    element.on(&apos;blur&apos;, function (event) {
       if (hasChanged) {
         scope.$apply(function () {
           fn(scope, {$event: event});
@@ -1687,7 +1701,7 @@ enctype = &quot;multipart/form-data&quot; })) {
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;multipart/form-data&lt;/code&gt; is a type of encoding the form and you should use it when you have a file upload so the server can understand it&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;As you can see i wrote manually the &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; attributes that will trigger the Asp.net unobtrusive validations , because there is no html helpers for input &lt;code class=&quot;language-text&quot;&gt;type=&amp;quot;file&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As you can see i wrote manually the &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; attributes that will trigger the Asp.net unobtrusive validations , because there is no html helpers for input &lt;code class=&quot;language-text&quot;&gt;type=&quot;file&quot;&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt;
   &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;model&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;file&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
@@ -1836,14 +1850,14 @@ enctype = &quot;multipart/form-data&quot; })) {
   &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;dynamic&lt;/span&gt;&lt;/span&gt; eoDynamic &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; expandoObject&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; eoDynamic&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Unit Test&lt;/h3&gt;
+&lt;p&gt;###Unit Test&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;csharp&quot;&gt;&lt;pre class=&quot;language-csharp&quot;&gt;&lt;code class=&quot;language-csharp&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token return-type class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Testing&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt;&lt;/span&gt; controller &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token constructor-invocation class-name&quot;&gt;HomeController&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt;&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; controller&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   Assert&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;AreEqual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ToDynamic&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;number&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Knockout view model binding variations to a page]]></title><description><![CDATA[Bind a viewModel to the whole page There are many variations to write the view model in knockout, for example if we are using a simple…]]></description><link>https://nadeemkhedr.com/2013-01-29---knockout-view-model-binding-variations-to-a-page/</link><guid isPermaLink="false">https://nadeemkhedr.com/2013-01-29---knockout-view-model-binding-variations-to-a-page/</guid><pubDate>Tue, 29 Jan 2013 15:22:53 GMT</pubDate><content:encoded>&lt;h2&gt;Bind a &lt;em&gt;viewModel&lt;/em&gt; to the whole page&lt;/h2&gt;
-&lt;p&gt;There are many variations to write the view model in knockout, for example if we are using a simple object as a view model we will have some problems with &lt;em&gt;&lt;span style=&quot;color:#800000;&quot;&gt;this, &lt;/span&gt;&lt;/em&gt;we will examine the variations of how we would write our view model and why&lt;/p&gt;
+&lt;p&gt;There are many variations to write the view model in knockout, for example if we are using a simple object as a view model we will have some problems with *&lt;span style=&quot;color:#800000;&quot;&gt;this, &lt;/span&gt;*we will examine the variations of how we would write our view model and why&lt;/p&gt;
 &lt;p&gt;First of lets start with a simple example and how to write a simple* view model* and bind it to the page&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;First name: &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;data-bind&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;value: firstName&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt; Last name:
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;data-bind&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;value: lastName&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
@@ -2048,7 +2062,7 @@ $forms&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;If its the first time we call &lt;code class=&quot;language-text&quot;&gt;validationInfo()&lt;/code&gt; then we construct a result object and will save it on the form using &lt;code class=&quot;language-text&quot;&gt;$.data()&lt;/code&gt; method this object will contain 3 parts:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;An object which is the basically all the options that we will pass to the &lt;code class=&quot;language-text&quot;&gt;validate()&lt;/code&gt; method with an empty rules &amp;#x26; messages arrays that will be constructed later&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;attachValidation()&lt;/code&gt; method will bind a custom event to the form itself &lt;code class=&quot;language-text&quot;&gt;“reset.unobtrusiveValidation”&lt;/code&gt; and after call validate on the method with all the options , this method will be called when the rules &amp;#x26; messages arrays are completed  (triggering the custom &lt;code class=&quot;language-text&quot;&gt;&amp;quot;reset&amp;quot;&lt;/code&gt; event will call &lt;code class=&quot;language-text&quot;&gt;onReset()&lt;/code&gt; method which will basically resets everything)&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;attachValidation()&lt;/code&gt; method will bind a custom event to the form itself &lt;code class=&quot;language-text&quot;&gt;“reset.unobtrusiveValidation”&lt;/code&gt; and after call validate on the method with all the options , this method will be called when the rules &amp;#x26; messages arrays are completed  (triggering the custom &lt;code class=&quot;language-text&quot;&gt;&quot;reset&quot;&lt;/code&gt; event will call &lt;code class=&quot;language-text&quot;&gt;onReset()&lt;/code&gt; method which will basically resets everything)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onReset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token comment&quot;&gt;// ‘this’ is the form element&lt;/span&gt;
@@ -2088,21 +2102,43 @@ $forms&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
 &lt;p&gt;you can consider this method the &lt;code class=&quot;language-text&quot;&gt;$.ajax&lt;/code&gt; method and the other three are helper methods that uses it&lt;/p&gt;
 &lt;p&gt;so lets explain the parameters&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;adapterName&lt;/code&gt;: is the adapter name as the name implies , and it matches the &lt;em&gt;ruleName&lt;/em&gt; in the Html element &lt;code class=&quot;language-text&quot;&gt;data-val-ruleName&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;[params]&lt;/code&gt;: an optional parameter array that the validation method would use to complete validation&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fn&lt;/code&gt;: Is called to map the Html &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; to rules and messages used by the &lt;code class=&quot;language-text&quot;&gt;validate()&lt;/code&gt; method and it has a parameter option passed to it which is an object containing the following properties:&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;element&lt;/code&gt;: the Html element being validated&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;form&lt;/code&gt;: the form element&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;message&lt;/code&gt;: the error message for this rule extracted from &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; attribute on the element&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;params&lt;/code&gt;: parameters that are used for the validation and its an array extracted from the &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; attributes on the Html element &lt;code class=&quot;language-text&quot;&gt;data-val-ruleName-param1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;rules&lt;/code&gt;: The jquery rules array for this element , your expected to add to this array the rule(s) that this adapter is used for
-you will pass key/value pairs&lt;/li&gt;
-&lt;li&gt;the key is the validation rule name ,&lt;/li&gt;
-&lt;li&gt;the value is the parameters used for this rule &lt;em&gt;(check this &lt;a href=&quot;/2012/08/12/how-the-jquery-validate-plugin-works-internally/#goCustomRulesAdd&quot;&gt;section&lt;/a&gt; in that article for adding custom rules to &lt;code class=&quot;language-text&quot;&gt;jquery.validate&lt;/code&gt;)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;messages&lt;/code&gt;: The jquery messages array for this element, same as the rules object you are expected to fill it and its used as the messages object for this Html element in the validate method&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;adapterName&lt;/code&gt;: is the adapter name as the name implies , and it matches the &lt;em&gt;ruleName&lt;/em&gt; in the Html element &lt;code class=&quot;language-text&quot;&gt;data-val-ruleName&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[params]&lt;/code&gt;: an optional parameter array that the validation method would use to complete validation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;fn&lt;/code&gt;: Is called to map the Html &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; to rules and messages used by the &lt;code class=&quot;language-text&quot;&gt;validate()&lt;/code&gt; method and it has a parameter option passed to it which is an object containing the following properties:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;element&lt;/code&gt;: the Html element being validated&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;form&lt;/code&gt;: the form element&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;message&lt;/code&gt;: the error message for this rule extracted from &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; attribute on the element&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;params&lt;/code&gt;: parameters that are used for the validation and its an array extracted from the &lt;code class=&quot;language-text&quot;&gt;data-*&lt;/code&gt; attributes on the Html element &lt;code class=&quot;language-text&quot;&gt;data-val-ruleName-param1&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;rules&lt;/code&gt;: The jquery rules array for this element , your expected to add to this array the rule(s) that this adapter is used for
+you will pass key/value pairs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the key is the validation rule name ,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the value is the parameters used for this rule &lt;em&gt;(check this &lt;a href=&quot;/2012/08/12/how-the-jquery-validate-plugin-works-internally/#goCustomRulesAdd&quot;&gt;section&lt;/a&gt; in that article for adding custom rules to &lt;code class=&quot;language-text&quot;&gt;jquery.validate&lt;/code&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;messages&lt;/code&gt;: The jquery messages array for this element, same as the rules object you are expected to fill it and its used as the messages object for this Html element in the validate method&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;There is no return result from the method. Whats happening manipulating the rules &amp;#x26; messages arrays will directly be saved on the form itself using &lt;code class=&quot;language-text&quot;&gt;$.data(“unobtrusiveValidation&amp;quot;)&lt;/code&gt; you can check the &lt;code class=&quot;language-text&quot;&gt;parseElement&lt;/code&gt; method for the details of how the parameter where passed to the adapter function&lt;/p&gt;
+&lt;p&gt;There is no return result from the method. Whats happening manipulating the rules &amp;#x26; messages arrays will directly be saved on the form itself using &lt;code class=&quot;language-text&quot;&gt;$.data(“unobtrusiveValidation&quot;)&lt;/code&gt; you can check the &lt;code class=&quot;language-text&quot;&gt;parseElement&lt;/code&gt; method for the details of how the parameter where passed to the adapter function&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt;
@@ -2545,7 +2581,7 @@ validator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;settings&
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;in this example the &lt;code class=&quot;language-text&quot;&gt;params&lt;/code&gt; will equal to&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{type:&amp;quot;notequal&amp;quot;, otherprop: &amp;quot;lastname&amp;quot;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{type:&quot;notequal&quot;, otherprop: &quot;lastname&quot;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Example to add custom rule&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;$&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;validator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addMethod&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
   &lt;span class=&quot;token string&quot;&gt;&apos;notnumbers&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -2558,9 +2594,15 @@ validator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;settings&
 &lt;h1&gt;What exactly happens when we call the &lt;em&gt;validate&lt;/em&gt; method.&lt;/h1&gt;
 &lt;p&gt;When you call &lt;code class=&quot;language-text&quot;&gt;validate&lt;/code&gt; on a form mainly couple of things happens behind the scene&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create a &lt;code class=&quot;language-text&quot;&gt;validator&lt;/code&gt; object with all the rules and options and attach it to the form.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;The &lt;em&gt;validate&lt;/em&gt; method attaches the &lt;em&gt;validator&lt;/em&gt; using &lt;em&gt;$.data&lt;/em&gt; , you can get it by selecting the form and calling the &lt;em&gt;jquery $.data&lt;/em&gt; function and passing it &lt;code class=&quot;language-text&quot;&gt;validator&lt;/code&gt;. The &lt;code class=&quot;language-text&quot;&gt;validator&lt;/code&gt; object is all the metadata for the validation giving us the ability to access the validate options at anytime in the page cycle&lt;/li&gt;
-&lt;li&gt;using this object you can change at &lt;strong&gt;runtime&lt;/strong&gt; the options that you passed to the validate method like adding or removing rules, change what happens when the field is valid or invalid or even provide an ignore selector&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a &lt;code class=&quot;language-text&quot;&gt;validator&lt;/code&gt; object with all the rules and options and attach it to the form.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;em&gt;validate&lt;/em&gt; method attaches the &lt;em&gt;validator&lt;/em&gt; using &lt;em&gt;$.data&lt;/em&gt; , you can get it by selecting the form and calling the &lt;em&gt;jquery $.data&lt;/em&gt; function and passing it &lt;code class=&quot;language-text&quot;&gt;validator&lt;/code&gt;. The &lt;code class=&quot;language-text&quot;&gt;validator&lt;/code&gt; object is all the metadata for the validation giving us the ability to access the validate options at anytime in the page cycle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;using this object you can change at &lt;strong&gt;runtime&lt;/strong&gt; the options that you passed to the validate method like adding or removing rules, change what happens when the field is valid or invalid or even provide an ignore selector&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//getting the validator&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; validator &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;.selector&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;validator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -2569,7 +2611,9 @@ validator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;settings&
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; validator &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;.selector&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;/* rules will be omitted */&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;subscribe events to the form itself&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;subscribe events to the form itself&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;What will happens when you click submit and there are invalid elements is you will trigger the validation of the fields, if one of them is not valid then the validate plugin will listen to it more closely to check if it is valid or not The events that are subscribed to the form are click, focusin, focusout, keyup, submit&lt;/p&gt;
 &lt;blockquote&gt;
